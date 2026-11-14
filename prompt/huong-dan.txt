@@ -1,0 +1,73 @@
+Tôi đang học Vibe Coding. Tôi muốn build 1 website admin quản lý video với các trang sau:
+
+Ngôn ngữ lập trình: chỉ sử dụng HTML CSS JavaScript. Database dùng Supabase
+Giao diện: tông màu sáng, mau chu dao la mau trang va mau do (#ee1d23)
+
+Dashboard
+Tổng số video
+Tổng lượt xem
+Dung lượng storage
+Biểu đồ cột: 10 video nhiều lượt xem nhất
+Biểu đồ line: lượt xem theo ngày/tháng
+
+List Video
+Danh sách video gồm: id, title, thumbnail, views, action (Edit, Delete)
+
+3 trang login, register, forgot password
+
+Table users quản lý người dùng.
+Table videos quản lý video.
+Thêm các table khác như video_categories...
+
+Account:
+username: admin1
+email: admin1@gmail.com
+password: 123456
+role: ADMIN
+
+username: user1
+email: user1@gmail.com
+password: 123456
+role: USER
+
+Thông tin connect Supabase được lưu trong file supabase.txt
+
+Hãy tạo cho tôi các file .MD cần thiết và nén lại thành file ZIP để download
+
+==========================
+Antigravity/Claude:
+Hãy đọc các file .md trong folder.
+Hãy tạo project dựa trên các file .md này
+
+==========================
+Bước 2: Sau khi tạo project:
+
+Tôi muốn dùng database trên supabase.
+Đầu tiên hãy tạo cho tôi các file .SQL để tôi tạo table trên supabase
+
+==========================
+Bước 3: 
+Tôi đã tạo file supabase.txt chứa các thông tin trên supabase.
+Hãy cho project connect với supabase
+
+==========================
+Bước 4: 
+Tôi muốn khi đăng nhập vào account admin thì tài khoản này có chỉnh sửa role của các account khác
+Hãy tạo menu Danh Sách User. Trong đó danh sách chứa các account khác
+Hãy tạo 10 account user từ 1 đến 10. password 123456
+
+==========================
+Deploy lên Cloudflare
+
+==========================
+Tạo Cronjob. Supabase tự shutdown sau 7 ngày
+
+<project-url>/rest/v1/<ten-table>?apikey=<publishable key>
+
+==========================
+Cách lấy thông tin connect Supabase
+Project URL: overview -> copy project url
+
+Publishable key: Project Setting -> API Keys -> Publishable key
+
+Password: Database -> Settings -> tạo password mới
