@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="UTF-8"><title>Video Admin</title>
+<script type="module">
+import { getSession } from './js/session.js';
+location.replace(getSession() ? 'dashboard.html' : 'login.html');
+</script></head><body></body></html>

@@ -1,0 +1,9 @@
+body.auth{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:16px}
+.auth-card{width:100%;max-width:420px;background:var(--bg-surface);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:32px}
+.auth-brand{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:20px;font-size:20px;font-weight:700}
+.auth-brand img{width:36px;height:36px}
+.auth-card h1{font-size:20px;text-align:center;margin-bottom:20px}
+.auth-links{display:flex;justify-content:space-between;margin-top:16px;font-size:13px}
+.pw-wrap{position:relative}.pw-wrap .input{padding-right:42px}
+.pw-toggle{position:absolute;right:4px;top:4px;height:34px;width:34px;border:0;background:none;cursor:pointer;font-size:16px}
+.check{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:16px}

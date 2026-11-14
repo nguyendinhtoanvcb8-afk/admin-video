@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi tiết video – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <main class="content" data-content>
+      <div class="page-head"><a href="videos.html">← Quay lại danh sách</a></div>
+      <div id="state"></div>
+      <div id="detail" class="hidden">
+        <div class="card">
+          <video class="preview-video" id="player" controls style="margin:0 0 16px"></video>
+          <h1 id="d-title"></h1>
+          <div class="t-sub" id="d-meta" style="margin:6px 0 12px"></div>
+          <p id="d-desc" class="comment-text"></p>
+        </div>
+        <div class="card">
+          <h2>Bình luận</h2>
+          <form id="cform" novalidate>
+            <textarea class="textarea" id="ctext" maxlength="1000" placeholder="Viết bình luận..."></textarea>
+            <div class="error-text hidden" id="cerr"></div>
+            <div class="form-actions"><button class="btn btn-primary" id="csend" type="submit">Gửi</button></div>
+          </form>
+          <div id="cstate" style="margin-top:12px"></div>
+          <div id="clist"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/video-detail.js"></script>
+</body>
+</html>

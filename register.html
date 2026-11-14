@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth">
+  <div class="auth-card">
+    <div class="auth-brand"><img src="assets/logo.svg" alt=""><span>Video Admin</span></div>
+    <h1>Đăng ký tài khoản</h1>
+    <div id="notice"></div>
+    <form id="form" novalidate>
+      <div class="field"><label for="fullName">Họ tên (không bắt buộc)</label><input class="input" id="fullName" autocomplete="name"><div class="error-text hidden"></div></div>
+      <div class="field"><label for="username">Username</label><input class="input" id="username" autocomplete="username"><div class="hint">3–30 ký tự: chữ, số, dấu gạch dưới</div><div class="error-text hidden"></div></div>
+      <div class="field"><label for="email">Email</label><input class="input" id="email" type="email" autocomplete="email"><div class="error-text hidden"></div></div>
+      <div class="field"><label for="password">Mật khẩu</label><div class="pw-wrap"><input class="input" id="password" type="password" autocomplete="new-password"><button type="button" class="pw-toggle" aria-label="Hiện/ẩn mật khẩu">👁</button></div><div class="error-text hidden"></div></div>
+      <div class="field"><label for="password2">Nhập lại mật khẩu</label><input class="input" id="password2" type="password" autocomplete="new-password"><div class="error-text hidden"></div></div>
+      <button class="btn btn-primary btn-block" id="submit" type="submit">Đăng ký</button>
+    </form>
+    <div class="auth-links"><a href="login.html">Đã có tài khoản? Đăng nhập</a></div>
+  </div>
+  <script type="module" src="js/pages/register.js"></script>
+</body>
+</html>

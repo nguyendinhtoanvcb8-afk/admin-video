@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danh sách User – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <main class="content" data-content>
+      <div class="page-head"><h1>Danh sách User</h1></div>
+      <div class="card">
+        <div class="filters"><input class="input" id="q" type="search" placeholder="🔍 Tìm theo username, email, họ tên..."></div>
+        <div id="state"></div>
+        <div class="table-wrap hidden" id="table-wrap">
+          <table><thead><tr><th>Username</th><th>Họ tên</th><th>Email</th><th>Role</th><th>Ngày tạo</th></tr></thead><tbody id="rows"></tbody></table>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/users.js"></script>
+</body>
+</html>

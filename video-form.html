@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thêm / Sửa video – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <main class="content" data-content>
+      <div class="page-head"><h1 id="heading">Thêm video</h1></div>
+      <div id="state"></div>
+      <form class="card form-card" id="form" novalidate>
+        <div class="field"><label for="title">Tiêu đề *</label><input class="input" id="title" maxlength="200"><div class="error-text hidden"></div></div>
+        <div class="field"><label for="description">Mô tả</label><textarea class="textarea" id="description" maxlength="2000"></textarea><div class="hint"><span id="desc-count">0</span>/2000</div><div class="error-text hidden"></div></div>
+        <div class="field"><label for="category">Danh mục</label><select class="select" id="category"><option value="">— Không chọn —</option></select></div>
+        <div class="field"><label for="status">Trạng thái</label><select class="select" id="status"><option>PUBLISHED</option><option>DRAFT</option><option>HIDDEN</option></select></div>
+        <div class="field"><label for="video" id="video-label">File video *</label><input class="input" id="video" type="file" accept="video/mp4,video/webm,video/quicktime,.mp4,.webm,.mov" style="padding-top:8px">
+          <div class="hint" id="video-info">mp4 / webm / mov, tối đa 50MB</div><div class="error-text hidden"></div>
+          <video class="preview-video hidden" id="video-preview" controls></video></div>
+        <div class="field"><label for="thumb">Thumbnail</label><input class="input" id="thumb" type="file" accept="image/jpeg,image/png,image/webp" style="padding-top:8px">
+          <div class="hint">jpg / png / webp, tối đa 5MB</div><div class="error-text hidden"></div>
+          <button class="btn btn-outline btn-sm" id="grab" type="button" style="margin-top:8px">🖼 Lấy ảnh từ video</button>
+          <img class="preview-img hidden" id="thumb-preview" alt="Xem trước thumbnail"></div>
+        <div id="uploading" class="hidden"><div class="hint">Đang tải lên…</div><div class="progress"><i></i></div></div>
+        <div class="form-actions"><button class="btn btn-primary" id="save" type="submit">Lưu</button><a class="btn btn-outline" href="videos.html" id="cancel">Hủy</a></div>
+      </form>
+    </main>
+  </div>
+  <script type="module" src="js/pages/video-form.js"></script>
+</body>
+</html>

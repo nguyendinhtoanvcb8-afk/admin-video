@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div id="app" class="app">
+    <main class="content" data-content>
+      <div class="page-head"><h1>Danh sách video</h1><a class="btn btn-primary hidden" id="add" href="video-form.html">+ Thêm video</a></div>
+      <div class="card">
+        <div class="filters">
+          <input class="input" id="q" type="search" placeholder="🔍 Tìm theo tiêu đề...">
+          <select class="select" id="cat"><option value="">Tất cả danh mục</option></select>
+          <select class="select" id="sort"><option value="newest">Sắp xếp: Mới nhất</option><option value="views">Sắp xếp: Nhiều lượt xem</option></select>
+        </div>
+        <div id="state"></div>
+        <div class="table-wrap hidden" id="table-wrap">
+          <table><thead><tr><th>ID</th><th>Thumbnail</th><th>Title</th><th>Views</th><th>Trạng thái</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table>
+        </div>
+        <div class="pagination hidden" id="pagination"><span id="range"></span><div class="pages" id="pages"></div></div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/videos.js"></script>
+</body>
+</html>

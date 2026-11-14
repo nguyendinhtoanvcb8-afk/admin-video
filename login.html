@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth">
+  <div class="auth-card">
+    <div class="auth-brand"><img src="assets/logo.svg" alt=""><span>Video Admin</span></div>
+    <h1>Đăng nhập</h1>
+    <div id="notice"></div>
+    <form id="form" novalidate>
+      <div class="field"><label for="login">Username hoặc Email</label><input class="input" id="login" autocomplete="username"><div class="error-text hidden"></div></div>
+      <div class="field"><label for="password">Mật khẩu</label>
+        <div class="pw-wrap"><input class="input" id="password" type="password" autocomplete="current-password"><button type="button" class="pw-toggle" aria-label="Hiện/ẩn mật khẩu">👁</button></div>
+        <div class="error-text hidden"></div></div>
+      <label class="check"><input type="checkbox" id="remember" checked> Ghi nhớ đăng nhập</label>
+      <button class="btn btn-primary btn-block" id="submit" type="submit">Đăng nhập</button>
+    </form>
+    <div class="auth-links"><a href="register.html">Chưa có tài khoản? Đăng ký</a><a href="forgot-password.html">Quên mật khẩu?</a></div>
+  </div>
+  <script type="module" src="js/pages/login.js"></script>
+</body>
+</html>

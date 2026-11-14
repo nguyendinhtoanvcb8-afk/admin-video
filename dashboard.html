@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard – Video Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <div id="app" class="app">
+    <main class="content" data-content>
+      <div class="page-head"><h1>Dashboard</h1><button class="btn btn-outline" id="refresh" type="button">⟳ Làm mới</button></div>
+      <div class="stats">
+        <div class="card stat"><div class="stat-icon">🎬</div><div><div class="stat-label">Tổng số video</div><div class="stat-value" id="s-videos">—</div></div></div>
+        <div class="card stat"><div class="stat-icon">👁</div><div><div class="stat-label">Tổng lượt xem</div><div class="stat-value" id="s-views">—</div></div></div>
+        <div class="card stat"><div class="stat-icon">💾</div><div><div class="stat-label">Dung lượng storage</div><div class="stat-value" id="s-storage">—</div></div></div>
+      </div>
+      <div class="charts">
+        <div class="card"><div class="chart-head"><h2>Top 10 video nhiều lượt xem nhất</h2></div>
+          <div id="bar-state"></div><div class="chart-box" id="bar-box"><canvas id="bar"></canvas></div></div>
+        <div class="card"><div class="chart-head"><h2>Lượt xem theo thời gian</h2>
+          <div class="seg"><button type="button" data-group="day" class="active">Theo ngày</button><button type="button" data-group="month">Theo tháng</button></div></div>
+          <div id="line-state"></div><div class="chart-box" id="line-box"><canvas id="line"></canvas></div></div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="js/pages/dashboard.js"></script>
+</body>
+</html>
