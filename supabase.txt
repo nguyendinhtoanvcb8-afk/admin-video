@@ -1,0 +1,3 @@
+# Chỉ chứa URL và anon key (công khai, được phép deploy). KHÔNG ghi password hay service_role vào đây.
+SUPABASE_URL=https://pkrheepzxmrdnimcypbf.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBrcmhlZXB6eG1yZG5pbWN5cGJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQwMzg5MTEsImV4cCI6MjEwOTYxNDkxMX0.oYNLIxfX7-xNt0P0uiBNDNJcHNs8lrtjEJmnE6VzRkQ
